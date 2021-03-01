@@ -18,7 +18,7 @@ import java.time.Instant;
 public class Expense {
 
     @Id
-    private long id;
+    private long expenseID;
 
     private Instant expenseDate;
 

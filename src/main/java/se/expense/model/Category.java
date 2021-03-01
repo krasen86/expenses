@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class Category {
 
     @Id
-    private long id;
+    private long categoryID;
     @NotNull
     private String categoryName;
 

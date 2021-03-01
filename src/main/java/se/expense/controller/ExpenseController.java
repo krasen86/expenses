@@ -38,7 +38,7 @@ public class ExpenseController {
     @PostMapping()
     ResponseEntity<?> createExpense(@Valid @RequestBody Expense expense) throws URISyntaxException {
         Expense addedExpense = expenseRepository.save(expense);
-        return ResponseEntity.created(new URI("/api/expenses" + addedExpense.getId())).body(addedExpense);
+        return ResponseEntity.created(new URI("/api/expenses/" + addedExpense.getExpenseID())).body(addedExpense);
 
     }
 

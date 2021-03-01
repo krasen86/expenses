@@ -39,7 +39,7 @@ public class UserController {
     @PostMapping()
     ResponseEntity<?> createUser(@Valid @RequestBody User user) throws URISyntaxException {
         User addedUser = userRepository.save(user);
-        return ResponseEntity.created(new URI("/api/users" + addedUser.getUserID())).body(addedUser);
+        return ResponseEntity.created(new URI("/api/users/" + addedUser.getUserID())).body(addedUser);
 
     }
 
