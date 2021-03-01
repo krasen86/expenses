@@ -6,8 +6,11 @@ class Home extends Component {
 
     render() {
         return (
-            <AppNav/>
-        );
+            <div>
+                <AppNav/>
+                <h2>Home Page</h2>
+            </div>
+    );
     }
 }
 
